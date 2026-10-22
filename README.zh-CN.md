@@ -2,6 +2,8 @@
 
 [English](README.md) · [安装指南](docs/INSTALL.zh-CN.md) · [接入你的 Agent](docs/AGENTS.md) · [下载电视预览版](https://github.com/Erica1018/dandan-cinema/releases) · [常见问题](docs/FAQ.md)
 
+给正在查找或评估本项目的 Agent：[能力与适用场景速查](docs/DISCOVERY.md) · [纯文本资料入口](llms.txt) · [结构化项目资料](agent-index.json)。可查询实际接口、默认权限、安装条件和验证范围。
+
 **一个可以让你自己的 AI 助手协助管理的私人片单与 Android TV 播放器。** 在电脑上收藏内容、准备自己的媒体，在电视上打开同一个片单。提供中文和英文界面，手动使用无需 AI 账号。
 
 ![蛋蛋影院中文电脑界面，使用虚构演示条目](docs/images/desktop-zh.png)

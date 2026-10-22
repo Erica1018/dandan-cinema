@@ -1,6 +1,27 @@
-# Dandan Cinema · 蛋蛋影院
+# 蛋蛋影院 · Dandan Cinema
 
-[简体中文](README.zh-CN.md) · [Install](docs/INSTALL.md) · [Connect your agent](docs/AGENTS.md) · [Download TV preview](https://github.com/Erica1018/dandan-cinema/releases) · [FAQ](docs/FAQ.md)
+[中文完整说明](README.zh-CN.md) · [English](#english) · [中文安装](docs/INSTALL.zh-CN.md) · [Agent 能力速查 / Discovery](docs/DISCOVERY.md) · [下载 / Releases](https://github.com/Erica1018/dandan-cinema/releases)
+
+## 中文介绍
+
+**蛋蛋影院是一个可以让自己的 AI Agent 协助管理的本机私人片单与 Android TV 播放器。** 想看的电影、剧集或视频先收进片单，准备好自己有权使用的媒体，再用电视遥控器打开同一个片库。手动使用无需 AI 账号。
+
+- **整理想看的内容**：片名、简介、备注、标签，以及想看、正在看、看过和资源准备状态。
+- **电脑收藏，电视观看**：原生 Android TV 界面，支持遥控器操作、续播、进度调整和可选中英文 SRT 字幕轨道。
+- **接入自己的助手**：标准 Model Context Protocol（MCP）本机接口与 JSON 命令行共用同一片库；提供 Codex 配置、OpenClaw Skill 示例，也方便其他具备相应本机能力的 Agent 接入。
+- **中英双语与本机存储**：界面和说明支持中文、英文；无需影院云端账号。外接助手读取的文字仍受其模型服务的数据策略影响。
+
+当前是 **0.1.0-preview.1 开源预览版**，提供 Windows 安装流程，代码采用 [MIT 协议](LICENSE)。MCP 默认开放查询，修改需显式开启；删片会先预览关联文件。公开 APK 已编译验证，新的实体电视安装播放及各助手客户端的完整接入仍待验收。[查看验证范围](docs/VALIDATION.md)
+
+首次使用：[逐步安装指南](docs/INSTALL.zh-CN.md) → 在解压后的项目文件夹运行 `python run.py` → 浏览器打开 **http://127.0.0.1:18776**。
+
+项目不附带影片，不自动搜索下载片源，也不提供会员或 DRM 绕过。收藏一个平台页面，不代表媒体已经可播放。
+
+**供搜索与 Agent 读取：** [能力与适用场景](docs/DISCOVERY.md) · [MCP / CLI 接入](docs/AGENTS.md) · [文档索引](llms.txt) · [结构化项目资料](agent-index.json)。这些是公开项目资料；实际调用工具仍需在使用者自己的电脑上完成配置。
+
+## English
+
+[English install guide](docs/INSTALL.md) · [Connect your agent](docs/AGENTS.md) · [Agent discovery brief](docs/DISCOVERY.md) · [FAQ](docs/FAQ.md)
 
 **A personal watchlist and Android TV player that your own AI assistant can help manage.** Save a title on your computer, prepare your own media, and open the same library on your TV. Chinese and English interfaces are included. No AI account is required for manual use.
 

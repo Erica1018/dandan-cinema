@@ -1,0 +1,73 @@
+{
+  "format": "dandan-cinema-project-index",
+  "format_version": 1,
+  "format_note": "Repository-specific documentation metadata, not a standard registry, plugin manifest, hosted endpoint or authorization to execute tools.",
+  "updated_on": "2026-10-22",
+  "name": {"zh-CN": "蛋蛋影院", "en": "Dandan Cinema"},
+  "aliases": ["dandan-cinema", "Dandan Cinema", "蛋蛋影院"],
+  "repository": "https://github.com/Erica1018/dandan-cinema",
+  "description": {
+    "zh-CN": "本机私人片单与 Android TV 播放器，可通过标准本机 MCP 或命令行让自己的 AI Agent 查询、收藏和整理同一个片库。",
+    "en": "A local personal watchlist and Android TV player with local stdio MCP and CLI tools for the user's own AI assistant to query and organize the same library."
+  },
+  "license": "MIT",
+  "release": {
+    "version": "0.1.0-preview.1",
+    "channel": "preview",
+    "url": "https://github.com/Erica1018/dandan-cinema/releases/tag/v0.1.0-preview.1"
+  },
+  "languages": ["zh-CN", "en"],
+  "runtime": {
+    "documented_computer_platform": "Windows",
+    "python_minimum": "3.11",
+    "application_command": ["python", "run.py"],
+    "default_editor_origin": "http://127.0.0.1:18776",
+    "requires_ai_account_for_manual_use": false,
+    "tv_optional": true,
+    "tv_minimum_android_api": 21,
+    "tv_target_android_api": 28,
+    "tv_package": "io.github.erica1018.dandancinema"
+  },
+  "interfaces": {
+    "mcp": {
+      "transport": "stdio",
+      "execution_location": "local machine with access to the application's loopback API",
+      "entrypoint": "mcp_server.py",
+      "requirements": "requirements-mcp.txt",
+      "default_tools": ["cinema_status", "library_list", "library_get"],
+      "write_opt_in_environment": {"DANDAN_MCP_ALLOW_WRITE": "1"},
+      "additional_tools_when_opted_in": ["library_add", "library_describe", "library_set_status", "library_add_source", "library_set_preparation", "media_publish", "library_delete_preview", "library_delete"],
+      "schema_source": "tools/list from the installed running MCP server",
+      "hosted_remote_endpoint": null
+    },
+    "cli": {"health_example": ["python", "watchroom/agent.py", "health"], "output": "JSON"},
+    "http_api": {"version": 1, "scope": "loopback application API", "reference": "docs/API.md"}
+  },
+  "operation_boundaries": {
+    "source_registration_downloads_media": false,
+    "preparation_status_starts_background_job": false,
+    "publish_requires_actual_identity_and_completeness_evidence": true,
+    "deletion_requires_preview_and_human_confirmation": true,
+    "write_flag_is_os_sandbox": false,
+    "external_ai_host_may_receive_library_text": true
+  },
+  "not_provided": ["bundled films", "automatic source search or downloads", "DRM or subscription bypass", "universal video-site parsing", "hosted cloud MCP access", "automatic subtitle translation"],
+  "verification": {
+    "mcp_stdio_protocol": "tested",
+    "individual_agent_client_end_to_end": "pending",
+    "public_apk_build_and_signature": "verified",
+    "public_apk_physical_tv_acceptance": "pending",
+    "evidence": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/VALIDATION.md"
+  },
+  "documentation": {
+    "discovery": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/DISCOVERY.md",
+    "index": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/llms.txt",
+    "overview_zh": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/README.zh-CN.md",
+    "overview_bilingual": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/README.md",
+    "install_zh": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/INSTALL.zh-CN.md",
+    "install_en": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/INSTALL.md",
+    "agent_setup": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/AGENTS.md",
+    "api": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/API.md",
+    "security": "https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/SECURITY.md"
+  }
+}

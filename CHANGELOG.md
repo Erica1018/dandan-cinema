@@ -1,5 +1,12 @@
 # Changelog
 
+## Documentation — 2026-10-22 20:21 (Asia/Shanghai) [agent:codex]
+
+- Put a substantial Chinese introduction directly on the repository homepage while retaining English and the full Chinese guide.
+- Make GitHub About Chinese-first and add relevant media-library, Model Context Protocol, subtitle and example-client topics (17 topics total).
+- Add bilingual task-fit/connection/evidence documentation and `agent-index.json`; route `llms.txt` to raw Markdown/JSON with useful link descriptions.
+- Validate indexed paths and actual MCP tool names; release-tree checks and 25 tests pass. Application behavior and preview APK are unchanged.
+
 ## 0.1.0-preview.1 — 2026-10-22 19:27 (Asia/Shanghai) [agent:codex]
 
 - Extract a public application-only preview with an empty library and independent package/ports.

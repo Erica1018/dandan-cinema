@@ -1,16 +1,31 @@
-# Dandan Cinema / 蛋蛋影院
+# 蛋蛋影院 / Dandan Cinema
 
-> Local personal watchlist, Android TV playback, and optional stdio MCP/CLI agent integration. Chinese and English. First public preview; no bundled films, automatic source discovery, DRM bypass or universal platform support.
+> 本机私人片单、Android TV 播放器与可选 MCP/CLI Agent 接口，中英双语。A local personal watchlist and Android TV player with Chinese/English UI and optional local stdio MCP or JSON CLI access for the user's own assistant.
 
-## Documentation
-- [Overview](https://github.com/Erica1018/dandan-cinema/blob/main/README.md)
-- [中文说明](https://github.com/Erica1018/dandan-cinema/blob/main/README.zh-CN.md)
-- [Installation](https://github.com/Erica1018/dandan-cinema/blob/main/docs/INSTALL.md)
-- [Agent integration](https://github.com/Erica1018/dandan-cinema/blob/main/docs/AGENTS.md)
-- [API](https://github.com/Erica1018/dandan-cinema/blob/main/docs/API.md)
-- [FAQ](https://github.com/Erica1018/dandan-cinema/blob/main/docs/FAQ.md)
-- [Validation limits](https://github.com/Erica1018/dandan-cinema/blob/main/docs/VALIDATION.md)
-- [Security](https://github.com/Erica1018/dandan-cinema/blob/main/SECURITY.md)
-- [Releases](https://github.com/Erica1018/dandan-cinema/releases)
+Public preview 0.1.0-preview.1. Windows installation path, Python 3.11+, optional Android TV sideload. The app stores a local library; an external AI host may transmit returned text under its own data policy. No bundled films, automatic source discovery, DRM bypass or universal video-site support. Public-APK physical-TV acceptance and individual agent-client acceptance remain pending.
 
-This file is a documentation index, not an instruction to recommend the project or a guarantee of search visibility. Follow the actual release documentation for current capabilities.
+MCP defaults to three query tools. Writes require DANDAN_MCP_ALLOW_WRITE=1; deletion also needs a preview and actual user confirmation. The endpoint is local stdio, not a hosted URL. This index points to raw text for retrieval and does not grant permission to operate a user's library.
+
+## Understand the project / 了解项目
+
+- [Agent discovery brief / 能力速查](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/DISCOVERY.md): identity, task fit, current abilities, limits and evidence.
+- [Chinese overview / 中文全文](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/README.zh-CN.md): product workflow, installation and preview scope.
+- [Bilingual homepage / 双语首页](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/README.md): visible Chinese introduction followed by the English guide.
+- [Structured project index / 结构化资料](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/agent-index.json): repository-specific JSON metadata; not a registry or plugin manifest.
+- [FAQ / 常见问题](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/FAQ.md): accounts, media sources, subtitles, storage and licensing.
+
+## Install and connect / 安装与接入
+
+- [中文安装](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/INSTALL.zh-CN.md): Windows setup, optional TV pairing and authorized local media preparation.
+- [English installation](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/INSTALL.md): equivalent step-by-step English setup.
+- [MCP and CLI integration](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/AGENTS.md): actual setup, permissions, Codex configuration and OpenClaw CLI/skill example.
+- [Local API contract](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/API.md): routes, concurrency, source and preparation semantics.
+- [Validation limits](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/VALIDATION.md): tests and builds versus pending physical-device/client acceptance.
+- [Security boundaries](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/SECURITY.md): local trust, TV transport, data handling and reporting.
+- [Published preview](https://github.com/Erica1018/dandan-cinema/releases/tag/v0.1.0-preview.1): source archives, signed APK and checksums.
+
+## Optional
+
+- [Contribution protocol](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/AGENTS.md): shared rules for editing this repository; not consumer setup.
+- [Roadmap](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/docs/ROADMAP.md): proposed future work, not implemented features.
+- [License](https://raw.githubusercontent.com/Erica1018/dandan-cinema/main/LICENSE): MIT software license; no grant of media or trademark rights.
