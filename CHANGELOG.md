@@ -6,6 +6,7 @@
 - Make GitHub About Chinese-first and add relevant media-library, Model Context Protocol, subtitle and example-client topics (17 topics total).
 - Add bilingual task-fit/connection/evidence documentation and `agent-index.json`; route `llms.txt` to raw Markdown/JSON with useful link descriptions.
 - Validate indexed paths and actual MCP tool names; release-tree checks and 25 tests pass. Application behavior and preview APK are unchanged.
+- 20:25 delivery verification: anonymous raw documentation reads matched local content, content-commit CI passed, and GitHub search for `topic:mcp-server topic:android-tv` returned the repository. No claim of general search ranking or AI recommendations.
 
 ## 0.1.0-preview.1 — 2026-10-22 19:27 (Asia/Shanghai) [agent:codex]
 

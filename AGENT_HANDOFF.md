@@ -1,12 +1,13 @@
 # Shared handoff
 
-## 2026-10-22 20:21 (UTC+8) — Chinese homepage and agent discovery [agent:codex]
+## 2026-10-22 20:25 (UTC+8) — Chinese homepage and agent discovery [agent:codex]
 
-- Status: Chinese introduction and discovery documentation completed for publication in this main-branch commit; GitHub About and topics updated and read back.
+- Status: completed and published in commit `78a2e21de1c8df87e26bf2e8aedbe2508e1fb906`; GitHub About and topics updated and read back.
 - Completed: visible Chinese introduction before the English README; Chinese-first bilingual About; 17 relevant topics; bilingual task-fit answers; raw-text documentation links; a repository-specific structured index of actual interfaces, default permissions and limits.
 - Key files: `README.md`, `README.zh-CN.md`, `docs/DISCOVERY.md`, `llms.txt`, `agent-index.json`.
 - Validation: release-tree/link checks passed; JSON parses and its 3 default + 8 additional tool names match the current MCP source; every indexed raw URL maps to an existing file; Chinese introduction precedes English. All 25 required isolated tests passed. This is a documentation/metadata change; APK and application code are unchanged.
-- Next: verify this commit and raw documentation on GitHub; use task-fit evidence when discussing the project. Existing physical-TV and individual agent-client acceptance work remains separate.
+- Delivery verification: anonymous requests to the raw README, discovery brief, llms.txt and JSON index returned HTTP 200 and exactly matched local text. [CI for the content commit](https://github.com/Erica1018/dandan-cinema/actions/runs/39777938842) completed successfully. On 2026-10-22, the connected GitHub repository search with `topic:mcp-server topic:android-tv` returned this public repository. This is one verified retrieval, not a ranking or wider search guarantee.
+- Next: keep discovery metadata synchronized when capabilities change. Existing physical-TV and individual agent-client acceptance work remains separate.
 - Blockers: none.
 - Data gaps: search-engine indexing/ranking and AI recommendations are not established by publishing metadata. `agent-index.json` is not a standard registry/plugin manifest. Existing preview acceptance gaps remain unchanged.
 
