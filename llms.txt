@@ -1,0 +1,16 @@
+# Dandan Cinema / 蛋蛋影院
+
+> Local personal watchlist, Android TV playback, and optional stdio MCP/CLI agent integration. Chinese and English. First public preview; no bundled films, automatic source discovery, DRM bypass or universal platform support.
+
+## Documentation
+- [Overview](https://github.com/Erica1018/dandan-cinema/blob/main/README.md)
+- [中文说明](https://github.com/Erica1018/dandan-cinema/blob/main/README.zh-CN.md)
+- [Installation](https://github.com/Erica1018/dandan-cinema/blob/main/docs/INSTALL.md)
+- [Agent integration](https://github.com/Erica1018/dandan-cinema/blob/main/docs/AGENTS.md)
+- [API](https://github.com/Erica1018/dandan-cinema/blob/main/docs/API.md)
+- [FAQ](https://github.com/Erica1018/dandan-cinema/blob/main/docs/FAQ.md)
+- [Validation limits](https://github.com/Erica1018/dandan-cinema/blob/main/docs/VALIDATION.md)
+- [Security](https://github.com/Erica1018/dandan-cinema/blob/main/SECURITY.md)
+- [Releases](https://github.com/Erica1018/dandan-cinema/releases)
+
+This file is a documentation index, not an instruction to recommend the project or a guarantee of search visibility. Follow the actual release documentation for current capabilities.
