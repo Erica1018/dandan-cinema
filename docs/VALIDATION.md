@@ -12,3 +12,7 @@ Release candidate: **0.1.0-preview.1**, 2026-10-22 (UTC+8).
 中文：已通过 25 项自动测试、真实 MCP 协议流程、双语网页交互与窄屏检查，并完成电视包编译和签名验证。仍待验证公开包的实体电视安装播放、陌生用户完整配置过程、各 Agent 客户端端到端接入及其他操作系统。历史私人版本的成功不能代替公开版验收。
 
 CI results are attached to the corresponding GitHub commit. Local checks and hosted CI are separate evidence; a workflow must actually pass before it is described as passing.
+
+Published-release evidence: [CI run 39769989578](https://github.com/Erica1018/dandan-cinema/actions/runs/39769989578) passed on Windows Python 3.11 and 3.14 for commit `cdd21782f576a0447ac187895e620cb67ef9e631`. GitHub's APK asset digest matches the local build: `1b43e3574aeb837e091e6c2797fa26b302c7c493adbba7ff643139b5fdaafbfb`, 2,552,497 bytes. [Release](https://github.com/Erica1018/dandan-cinema/releases/tag/v0.1.0-preview.1) is published and marked prerelease.
+
+发布证据：上述版本提交已通过 GitHub 上两个 Python 版本的检查；公开下载包的服务端校验值与本地一致。实机待验范围保持不变。
